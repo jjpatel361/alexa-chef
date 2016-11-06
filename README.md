@@ -1,14 +1,13 @@
-## **Sample Alexa app - Simple Weather Service**
+## **Sample Alexa app - Personal Chef Assistance**
 ___
 
 ## **Overview**
-This is a simple example of an Alexa app to use with Amazon Echo.
+This is a simple example of an Alexa app to use with Amazon Echo, to give you access to reciepies across the world. 
 
-* **weather-service.js** retrieves the current temperature from OpenWeatherAPI
-
-* **index.js** contains the interface Amazon Alexa. It defines a simple intent (an action) to retrieve the weather for a city, with CITY as a slot (user input), and a few utterances (accepted user commands) that trigger the action.
-
-* **weatherAPIKey.json** must have the API Key obtained from OpenWeatherAPI site to use their service. The saved version in this repo does NOT have an API key, you must generate one and put it in this file.
+* **MessageProvider.js** - A service that serves prompt message, reprompt and error messages. The messages are stored in `messages.json` to be make it easy to configure.
+* **RecipeService.js** - A service that parses JSON data and data manipulation.   
+* **index.js** contains the interface Amazon Alexa. 
+* **Messages.json and recipe.json** - stores the general messages that can be configured by developer. 
 
 ## **Requirements**
 ___
@@ -17,14 +16,11 @@ Install NodeJS LTS (preferably v4.3.0, so it matches AWS Lambda).
 	https://nodejs.org/en/download/
 
 Then, install the Node dependencies using this command:
-	~~~
+	***
 	npm install
-	~~~
-Also, make sure to generate a new API key from OpenWeatherAPI to use this app. It's free and quick. Just go to https://openweathermap.org/api, sign up for an account and it'll provide you an API key to use.
-
-Place your API key in the file **weatherAPIKey.json**
-
+	***
 Additionally, to test this app locally without using Amazon Echo / Alexa yet, do the following:
+
 * Clone the project **alexa-app-server** from this Github repository: https://github.com/matt-kruse/alexa-app-server.
 * From the project's root directory, install its dependencies:
 	~~~
@@ -46,9 +42,10 @@ Create an AWS account in https://aws.amazon.com/. The Free Tier/Plan is good eno
 
 Create a new zip of the files that contain the code used by the app. This includes the **node_modules/** directory, since these are the packages that the app depends on. Files/Folders you need to package are:
 * index.js
-* weather-service.js
-* weatherAPIKey.json
+* datastore/
+* services/
 * node_modules/
+
 
 First, we'll create an AWS role to run our Lambda function:
 1. In AWS, go to the IAM console
