@@ -46,7 +46,7 @@ recipe_utterance = messageProvider.getUtterances('GETRECIPE');
 
 app.intent('GetRecipe',{
 		slots: {RECIPE: "LIST_OF_ALL_RECIPE"},
-		utterances: recipe_utterance
+		utterances: ['{ How| What} { takes |to|tell me | prepare} {RECIPE}']
 },function (req,res) {
 
 	var recipe_name = req.slot("RECIPE");

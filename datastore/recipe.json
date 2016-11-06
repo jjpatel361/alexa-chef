@@ -1,7 +1,15 @@
 {
 	"FRENCH_BREAD": {
-    "proc" : "procedure is not yet coded. Jay will be here in some time, he is a great guy.",
+    "proc" : "Dissolve yeast in warm water (110 degrees) and sugar in large bowl; allow yeast to proof or foam (about 10 minutes).Add salt, oil, and 3 cups flour; beat for 2 minutes.Stir in 2 cups flour to make a stiff dough.Knead until smooth and elastic, about 10 minutes.Place in oiled bowl, turn dough to coat all sides, cover and let rise until doubled.Punch down and divide in half.Shape dough into two long slender loaves.Grease and sprinkle with cornmeal either a french bread pan or large cookie sheet.Place loaves in pan and cut diagonal gashes on top of each loaf (I use scissors).Cover and let rise until doubled.Bake at 375 degrees for about 30 minutes.Note: You can sprinkle or spray water on the loaves during baking if you want a really crunchy crust.",
     "ingredients" : "3 eggs, one fourth sugar of choice, half cup milk, half vanilla and cinnamon for taste"
+  },
+  "BACON_EGG":{
+    "proc": "BEAT eggs, milk, salt and pepper in small bowl until blended. HEAT 1 tsp. butter in large nonstick skillet over medium heat until hot. POUR IN egg mixture. As eggs begin to set, GENTLY PULL the eggs across the pan with an inverted turner, forming large soft curds. CONTINUE cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly. REMOVE from pan. CLEAN skillet. SPREAD remaining 2 tsp. butter evenly on one side of each bread slice. PLACE 2 slices in skillet, buttered side down. TOP evenly with scrambled eggs, cheese and bacon. COVER with remaining bread, buttered side up. COOK sandwiches over medium heat, turning once, until bread is toasted and cheese is melted, 2 to 4 minutes.",
+    "ingredients":"2 EGGS, 2 tbsp milk OR water, salt and pepper, as desired 3 tsp. butter, room temperature, divided 4 slices whole wheat OR white bread 2 slices Colby-Jack cheese 4 slices fully-cooked bacon"
+  },
+  "CHICKEN_SANDWICHES":{
+    "ingredients":"For Dressing 8 anchovies, minced 2 garlic cloves, minced, 6 tablespoons mayonnaise, 3 tablespoons freshly squeezed lemon juice, Splash of Worcestershire sauce, Kosher salt and freshly ground black pepper. For Sandwiches 1 cup romaine lettuce leaves, 1 pound boneless, skinless, thinly sliced chicken breasts, Kosher salt an freshly ground black pepper  Coupons, 1 tablespoon olive oil, 4 ciabatta rolls, toasted, quarter cup shaved Parmesan cheese",
+    "proc":"Whisk anchovies, garlic, mayonnaise, lemon juice, and Worcestershire sauce to blend. Season with salt and pepper, to taste. Add water to thin, if desired. In a small bowl, combine romaine with ½ tablespoon dressing, and toss to coat. Set aside. Season chicken with salt and pepper on both sides. Heat olive oil in a medium skillet over medium-high heat. Add chicken, and cook, flipping once, until just cooked through, 3 to 4 minutes per side. Let rest 5 minutes. Slice across the grain into strips. Serve sandwiches on ciabatta with lettuce, chicken, Parmesan, and more dressing."
   }
 
 }
