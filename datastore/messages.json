@@ -1,0 +1,5 @@
+{
+	"LAUNCH_MESSAGE": "Hi, What would you like to have today?",
+	"REPROMPT_MESSAGE":  "Sorry may be I missed what you just said.",
+	"NO_RECIEPE": "Sorry I don't have that recipe with me right now."
+}
