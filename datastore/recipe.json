@@ -1,3 +1,7 @@
 {
-	"FRENCH_BREAD": "procedure is not yet coded. Jay will be here in some time, he is a great guy."
+	"FRENCH_BREAD": {
+    "proc" : "procedure is not yet coded. Jay will be here in some time, he is a great guy.",
+    "ingredients" : "3 eggs, one fourth sugar of choice, half cup milk, half vanilla and cinnamon for taste"
+  }
+
 }

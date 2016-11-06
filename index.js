@@ -38,32 +38,6 @@ app.launch(function(req, res) {
 		"Weather at  {CITY}"
 		"Weather in  {CITY}"
 */
-app.intent('AskWeatherInCity', {
-		slots: { CITY: "LIST_OF_CITIES" },
-		utterances: ["{Weather} {|for|at|in} {CITY}"]
-	},
-
-	function(req, res) {							/* This is the body of the intent,
-													   what will happen when the user calls it */
-
-		var city = req.slot("CITY")					// Get the value in the slot "CITY"
-
-		weatherService.getWeatherForCity(city) 		// Use our app's weather service
-		.then(function(result) {
-			var response = `Weather at City ${city} with min ${result.min} and max ${result.max}`
-
-			res.say(response).send()				// Say the response we created
-
-			res.shouldEndSession(true);				// End the app
-		})
-		.catch(function	(err) {
-
-			res.say(`Sorry, weather is not available`).send() 	// Also have a nice error message
-
-		})
-		return false
-	}
-)
 
 
 // Keep static between all request response
@@ -88,5 +62,33 @@ app.intent('GetRecipe',{
 	}
 
 })
+
+
+
+// Keep static between all request response
+
+// Slots are stored on server itself so just point key
+
+app.intent('GetIngredients',{
+		slots: {RECIPE: "LIST_OF_ALL_RECIPE"},
+		utterances: ["{What|What's} {ingredients|ingredient} {RECIPE} "]
+},function (req,res) {
+
+	try {
+	var recipe_name = req.slot("RECIPE");
+	var procedure = RecipeService.getIngredients(recipe_name);
+		if(procedure == "undefined") {
+			procedure = messageProvider.getErrorMessage();
+		}
+	} catch (e) {
+			// think what goes here!
+			console.log(e);
+	} finally{
+		res.say(procedure).send();
+	}
+
+})
+
+
 
 module.exports = app
