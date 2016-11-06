@@ -2,12 +2,12 @@
 ___
 
 ## **Overview**
-This is a simple example of an Alexa app to use with Amazon Echo, to give you access to reciepies across the world. 
+This is a simple example of an Alexa app to use with Amazon Echo, to give you access to reciepies across the world.
 
 * **MessageProvider.js** - A service that serves prompt message, reprompt and error messages. The messages are stored in `messages.json` to be make it easy to configure.
 * **RecipeService.js** - A service that parses JSON data and data manipulation.   
-* **index.js** contains the interface Amazon Alexa. 
-* **Messages.json and recipe.json** - stores the general messages that can be configured by developer. 
+* **index.js** contains the interface Amazon Alexa.
+* **Messages.json and recipe.json** - stores the general messages that can be configured by developer.
 
 ## **Requirements**
 ___
@@ -26,12 +26,12 @@ Additionally, to test this app locally without using Amazon Echo / Alexa yet, do
 	~~~
 	npm install
 	~~~
-* Locate the folder **examples/apps** and copy the SimpleWeather project folder in it. You directory path should be **alexa-app-server/examples/apps/simple-weather**
+* Locate the folder **examples/apps** and copy the Chef project folder in it. You directory path should be **alexa-app-server/examples/apps/chef
 * Go to the **alexa-app-server/examples** folder, and run this command to start the test server:
     ~~~
     node server
     ~~~
-* With the server running, we can use it to test our Alexa app launch and intents. Go to this URL and play with it: **http://localhost:8080/alexa/simpleweather**
+* With the server running, we can use it to test our Alexa app launch and intents. Go to this URL and play with it: **http://localhost:8080/alexa/chef**
 
 ## **Using with Amazon Echo / Alexa**
 ___
